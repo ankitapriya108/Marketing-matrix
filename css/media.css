@@ -299,9 +299,9 @@ text-align: center;
     padding: 0.55rem 1rem;
     font-size: 14px;
   }
-  .pb-5 {
+  /* .pb-5 {
     padding-bottom: 1rem !important;
-  }
+  } */
   .card {
     margin-top: 1rem;
   }
@@ -353,7 +353,7 @@ text-align: center;
   height: 40px;
 }
 .heading-style-h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 .text-size-regular {
   font-size: 15px;
@@ -377,12 +377,13 @@ a.btn {
 }
 .section-one h2 {
   font-size: 1.75rem;
+  margin-top: 2rem;
 }
 .section-one h5 {
   font-size: 1.25rem;
 }
 section.marketing-section.my-5.pt-5{
-  margin-top: 2rem !important;
+  margin-top: 7rem !important;
 }
 .fs-1 {
   font-size: 23px !important;
@@ -421,7 +422,7 @@ section.section-seven.my-5{
   font-size: 1.75rem;
 }
 .section-team-right img {
-  height: 250px;
+  height: 280px;
 }
 
   .blog-cards-container {
