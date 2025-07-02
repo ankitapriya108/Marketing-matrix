@@ -85,6 +85,19 @@ ul{
 .nav-links a:hover {
   color: #ff820b;
 }
+button.btn.btn-submit{
+  background-color: #fcfdff00;
+  background-image: linear-gradient(153deg, #ff820b, #8f470c) !important;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  border: 0;
+}
+button.btn.btn-submit:hover{
+  background-image: linear-gradient(153deg, #8f470c, #ff820b);
+  color: white;
+  text-decoration: none;
+}
 
 a.btn {
   background-color: #fcfdff00;
@@ -794,7 +807,7 @@ border: 20px solid #000;
   background-color: #0076b6;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .case-card {
     flex-direction: column;
     text-align: center;
@@ -813,7 +826,7 @@ border: 20px solid #000;
   .stat-box {
     border: none !important;
   }
-}
+} */
 
 
 a.work-box{
@@ -838,52 +851,7 @@ a.work-box:hover{
 }
 .section-team-right img{
   object-fit: cover;
-  /* height: 500px; */
 }
-
-
-
-
-
-/*...................teams..................*/
-/* .team-card {
-  position: relative;
-  text-align: center;
-}
-
-.team-card img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.team-info {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  padding: 10px 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  z-index: -1;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-
-.team-card.show-info .team-info {
-  opacity: 1;
-  z-index: 10;
-  pointer-events: auto;
-}
-.team-card a{
-  text-decoration: none;
-}
-.team-card a i{
-  font-size: 40px;
-  color: #000;
-} */
-
 
 .team-card {
   position: relative;
@@ -990,17 +958,6 @@ p.card-para{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .profile-box {
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -1010,7 +967,7 @@ p.card-para{
 }
 
 .profile-top {
-  background: linear-gradient(135deg, #03a9f4, #03a9f4);
+  background: linear-gradient(135deg, #ff820b, #ff820b);
   height: 150px;
   position: relative;
 }
@@ -1025,7 +982,7 @@ p.card-para{
   width: 80px;
   height: 80px;
   object-fit: cover;
-  box-shadow: 0 0 0 3px red;
+  box-shadow: 0 0 0 3px black;
 }
 
 .profile-details {
@@ -1062,7 +1019,6 @@ p.card-para{
 
 .openings-box h6 {
   font-weight: 600;
-  color: #0a3d62;
   font-size: 25px;
 }
 
