@@ -8,6 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/media.css" />
@@ -183,21 +187,21 @@
                 <h1 class="text-center primary fw-bold">Lets Talk Numbers</h1>
 
                 <div class="row align-items-center my-5">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
                         <div class="number-card text-center py-5 px-4">
                             <img src="./images/e-commerce.png" class="img-fluid" alt="image">
                             <p class="numbers pt-3">80<span>+</span></p>
                             <p>E-Commerce Brands <br> Managed</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
                         <div class="number-card text-center py-5 px-4">
                             <img src="./images/money.png" class="img-fluid" alt="image">
                             <p class="numbers pt-3">10<span>+</span></p>
                             <p>Core Ad Spends Managed Across Channels</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
                         <div class="number-card text-center py-5 px-4">
                             <img src="./images/socila.png" class="img-fluid" alt="image">
                             <p class="numbers pt-3">10<span>+</span></p>
@@ -372,7 +376,7 @@
           </section>
 
 
-          <!-- <section class="section-six mt-5">
+          <section class="section-six mt-5">
             <div class="container">
               <h2 class="text-center">What Our Clients Say About Us</h2>
               <div class="swiper mySwiper">
@@ -428,8 +432,7 @@
                 </div>
               </div>
             </div>
-          </section> -->
-
+          </section>
 
 
 
@@ -528,7 +531,7 @@
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
 
@@ -587,6 +590,7 @@
 
 
 
+ 
   const swiper = new Swiper('.mySwiper', {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -607,6 +611,8 @@
       },
     },
   });
+
+
 
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('.team-card').forEach(card => {

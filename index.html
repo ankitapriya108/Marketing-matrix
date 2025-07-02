@@ -921,24 +921,37 @@
 
 
 
-
   const sliderTrack = document.getElementById('sliderTrack');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-  let scrollAmount = 0;
-  const cardWidth = 320; // including gap
+let scrollAmount = 0;
 
-  prevBtn.addEventListener('click', () => {
-    scrollAmount = Math.max(scrollAmount - cardWidth, 0);
-    sliderTrack.style.transform = `translateX(-${scrollAmount}px)`;
-  });
+function getCardWidth() {
+  const card = sliderTrack.querySelector('.blog-card');
+  return card ? card.offsetWidth + parseInt(getComputedStyle(sliderTrack).gap || 0) : 320;
+}
 
-  nextBtn.addEventListener('click', () => {
-    const maxScroll = sliderTrack.scrollWidth - sliderTrack.clientWidth;
+function updateSlider(direction) {
+  const cardWidth = getCardWidth();
+  const maxScroll = sliderTrack.scrollWidth - sliderTrack.clientWidth;
+
+  if (direction === 'next') {
     scrollAmount = Math.min(scrollAmount + cardWidth, maxScroll);
-    sliderTrack.style.transform = `translateX(-${scrollAmount}px)`;
-  });
+  } else {
+    scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+  }
+
+  sliderTrack.style.transform = `translateX(-${scrollAmount}px)`;
+}
+
+prevBtn.addEventListener('click', () => updateSlider('prev'));
+nextBtn.addEventListener('click', () => updateSlider('next'));
+
+window.addEventListener('resize', () => {
+  scrollAmount = 0; // reset on resize
+  sliderTrack.style.transform = `translateX(0px)`;
+});
 
 
 
