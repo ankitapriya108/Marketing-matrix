@@ -94,6 +94,13 @@
   margin-top: 2rem;
   font-size: 2.5rem;
 }
+.case-study-container h2{
+  text-align: center;
+}
+.study-content{
+ margin-left: 0px;
+ margin-right: 0px;
+}
 }
 
 @media (max-width: 768px) {
@@ -269,6 +276,9 @@ text-align: center;
 .section-text p{
   margin-top: 1.5rem;
 }
+.case-study h1 {
+  font-size: 2.75rem;
+}
 }
 
 
@@ -442,5 +452,8 @@ section.section-seven.my-5{
 }
 .stat-box h3 {
   font-size: 25px;
+}
+.case-study h1 {
+  font-size: 2.25rem;
 }
 }

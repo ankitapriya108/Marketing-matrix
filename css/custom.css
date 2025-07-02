@@ -1088,3 +1088,46 @@ p.card-para{
 .btn-submit:hover {
   background-color: #0288d1;
 }
+
+
+
+.case-study{
+  background-image: linear-gradient(#c4c7cb, #c4c7cb);
+}
+.case-study h1{
+  font-size: 3rem;
+}
+.case-study-container{
+  height: auto;
+  width: 1005;
+  background-color: #f5f4f0;
+}
+.study-heading{
+  background-color: #000;
+
+}
+.study-content{
+  background-color: #fff;
+  padding: 3rem;
+  margin: 0 10rem;
+  border-radius: 20px;
+}
+.overview ul {
+  padding-left: 30px !important;
+}
+.our-strategy ul {
+  padding-left: 30px !important;
+}
+.objective ul {
+  padding-left: 30px !important;
+}
+.result-delivered ul {
+  padding-left: 30px !important;
+}
+.blog-cards-container a{
+  text-decoration: none;
+  color: #000;
+}
+.blog-cards-container a:hover{
+  color: #000;
+}
