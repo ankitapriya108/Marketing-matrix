@@ -1134,3 +1134,10 @@ p.card-para{
 .terms-and-conditions{
   background-color: #f5f4f0;
 }
+.blog-section a{
+  text-decoration: none;
+}
+.blog-section a:hover{
+  color: #000;
+  text-decoration: none;
+}
