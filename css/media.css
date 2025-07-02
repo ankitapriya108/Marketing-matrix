@@ -224,6 +224,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  padding: 0px;
 }
 .case-content{
 width: 100%;
@@ -434,5 +435,11 @@ section.section-seven.my-5{
   }
   .openings-box h6 {
     font-size: 20px;
+}
+.stat-box span {
+  font-size: 13px;
+}
+.stat-box h3 {
+  font-size: 25px;
 }
 }
