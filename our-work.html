@@ -446,5 +446,40 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        // Toggle nav menu
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    navLinks.classList.toggle("show");
+  });
+
+  // Toggle dropdown inside nav (for mobile)
+  function toggleDropdown(event) {
+    event.preventDefault(); // prevent default anchor click
+    const dropdown = event.target.closest(".dropdown");
+    dropdown.classList.toggle("active");
+  }
+
+
+  function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.target.closest('.dropdown');
+    dropdown.classList.toggle('active');
+  }
+
+  document.addEventListener('click', function (e) {
+    const clickedInside = e.target.closest('.dropdown');
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      if (drop !== clickedInside) {
+        drop.classList.remove('active');
+      }
+    });
+  });
+  
+    </script>
 </body>
 </html>
