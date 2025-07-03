@@ -29,6 +29,11 @@ ul{
   color: #000;
 }
 
+.orange{
+  color: #ff820b !important;
+  font-weight: 600;
+}
+
 
 .navbar {
   display: flex;
@@ -518,8 +523,11 @@ a.btn:hover {
 
 
 .footer {
-  padding: 60px 20px 50px;
+  padding: 60px 20px 0px;
   background-color: #000;
+}
+.copyright-section p{
+  font-size: 15px;
 }
 
 .footer h6,
@@ -547,81 +555,75 @@ a.btn:hover {
 .footer-logo img{
   height: 220px;
 }
-
 .cookie-banner {
   background-color: #000;
-  text-align: center;
-  padding: 20px;
-  position: sticky;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
-  z-index: 1050;
+  z-index: 998;
+  transition: opacity 0.5s ease;
 }
 
-.cookie-banner p {
-  font-size: 1.5rem;
+.cookie-banner.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .banner-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
-  position: relative; 
 }
 
-.whatsapp-logo {
-  position: absolute;
-  right: -65px;
-  top: 50%;
-  transform: translateY(-50%);
+.cookie-text {
+  font-size: 1.5rem;
+  flex: 1 1 70%;
+}
+
+.action-buttons {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  align-items: center;
+}
+
+.accept-btn {
+  background: linear-gradient(to right, #f26a00, #e17b0d);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: background 0.3s ease;
+}
+
+.accept-btn:hover {
+  background: linear-gradient(to right, #e85c00, #c96c08);
 }
 
 .whatsapp-logo img {
-  width: 45px; 
-  height: 45px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 35px;
+    right: 50px;
+    z-index: 999;
 }
-
-
-
-.message-tooltip {
-  background: white;
-  color: black;
-  padding: 6px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
+.main{
   position: relative;
-  white-space: nowrap;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  
 }
 
 
-.message-tooltip::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -15px;
-  transform: translateY(-50%);
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent transparent transparent white;
-}
-.whatsapp-logo:hover .message-tooltip {
-  display: none;
-}
-/* .accept-btn:hover ~ .whatsapp-logo .message-tooltip,
-.whatsapp-logo:hover .message-tooltip {
-  display: none;
-} */
 
-.btn-accept {
+/* .btn-accept {
   background-color: #002f45;
   border: none;
-}
+} */
 
 .social-icons img {
   width: 20px;

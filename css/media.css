@@ -1,7 +1,7 @@
 @media (max-width:1250px)
 {
-  .whatsapp-logo{
-    right: -40px;
+  .whatsapp-logo img {
+    right: 30px;
   }
 }
 
@@ -12,6 +12,21 @@
   .navbar{
     padding: 15px 0px;
   }
+   .whatsapp-logo img {
+    right: 60px;
+    bottom: 55px;
+  }
+}
+@media (max-width:1100px){
+      .whatsapp-logo img {
+        right: 25px;
+      }
+}
+
+@media (max-width: 1030px) {
+    .whatsapp-logo img {
+        right: 15px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -60,14 +75,13 @@
   }
   .cookie-banner p {
     font-size: 1rem;
-    width: 70%;
+
 }
-  .banner-content {
-    gap: 0px;
-  }
-  .whatsapp-logo {
-    right: -10px;
-}
+
+      .whatsapp-logo img {
+        right: 20px;
+        bottom: 26px;
+    }
   .mt-4 {
     margin-top: 0px !important;
   }
@@ -101,6 +115,16 @@
  margin-left: 0px;
  margin-right: 0px;
 }
+
+ .banner-content{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .cookie-banner p{
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -170,19 +194,11 @@
     width: 100%;
     text-align: center;
   }
-  .banner-content{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .cookie-banner p{
-    width: 100%;
-  }
-  .whatsapp-logo {
+ 
+  /* .whatsapp-logo {
     right: 20px;
     top: 80%;
-}
+} */
 .section-one h2 {
   font-size: 2.5rem;
 }
@@ -356,9 +372,9 @@ text-align: center;
   padding-top: 0px !important;
 }
 
-.cookie-banner p {
-  font-size: 14px;
-}
+    .cookie-banner p {
+        font-size: 13px;
+    }
 .logo img {
   height: 40px;
 }

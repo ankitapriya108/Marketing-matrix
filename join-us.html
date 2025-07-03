@@ -42,7 +42,7 @@
                   <li><a href="./our-work.html">Our Work</a></li>
                   <li><a href="./team.html">DROI Team</a></li>
                   <li><a href="./blog.html">Blog</a></li>
-                  <li><a href="./join-us.html">Join Us</a></li>
+                  <li><a href="./join-us.html" class="orange">Join Us</a></li>
                   <li><a href="./get-started.html" class="btn">Get Started</a></li>
                 </ul>
               </nav>
@@ -202,26 +202,27 @@
                 </footer>
               </section>
         
-              <!-- Cookie banner -->
-        
-              <div class="cookie-banner">
-                <div class="container">
-                  <div class="banner-content text-white px-5">
-                    <p>
-                      We use cookies to improve your browsing experience. Read more
-                      about our cookie and privacy policy. By clicking accept, you agree
-                      to the use of cookies on your device.
-                    </p>
-                    <a href="" class="btn text-white ms-2">Accept</a>
-                    <div class="whatsapp-logo">
-                      <!-- <div class="message-tooltip">Message us</div> -->
-                      <a href="">
-                        <img src="./images/whatsapp.png" class="img-fluid" alt="image"
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <!-- Cookie banner -->
+
+     <div class="cookie-banner d-none" id="cookie-banner">
+  <div class="container">
+    <div class="banner-content text-white px-3">
+      <p class="cookie-text mb-0 text-center">
+        We use cookies to improve your browsing experience. Read more about our cookie and privacy policy. By clicking accept, you agree to the use of cookies on your device.
+      </p>
+      <div class="action-buttons d-flex align-items-center">
+        <a href="javascript:void(0)" class="btn accept-btn ms-3 me-2" id="accept-btn">Accept</a>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="whatsapp-logo">
+          <a href="https://wa.me/+918952949752" target="_blank">
+            <img src="./images/whatsapp.png" class="img-fluid" alt="WhatsApp" />
+          </a>
+        </div>
 
     </div>
     
@@ -285,6 +286,20 @@ const slides = document.querySelectorAll('.image-slide');
     // Update the text
     sliderText.innerHTML = textArray[current];
   }, 3000);
+
+
+
+    window.onload = function () {
+    setTimeout(() => {
+      const banner = document.getElementById("cookie-banner");
+      banner.classList.remove("d-none");
+    }, 3000); // 3000ms = 3 seconds
+  };
+  document.getElementById("accept-btn").addEventListener("click", function () {
+    document.getElementById("cookie-banner").classList.add("hide");
+  });
+
+
     </script>
 </body>
 </html>
