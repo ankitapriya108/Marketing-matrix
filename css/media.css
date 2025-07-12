@@ -146,6 +146,9 @@
   .cookie-banner p {
     width: 100%;
   }
+  .plan-benefits ul li {
+    font-size: 14px;
+}
 }
 
 @media (max-width: 768px) {
@@ -367,6 +370,25 @@
   }
 }
 
+@media (max-width:860px){
+  .plans.d-flex.justify-content-between.mt-5 {
+    flex-direction: column !important;
+    gap: 2rem;
+}
+    .plan-benefits ul li {
+        font-size: 20px;
+    }
+.plan1{
+  width: 100%;
+}
+.plan2{
+  width: 100%;
+}
+.plan3{
+  width: 100%;
+}
+}
+
 @media (max-width: 520px) {
   .heading-container {
     padding-top: 3rem;
@@ -559,4 +581,7 @@
     .solver-text h1 {
         font-size: 2rem;
     } 
+        .plan-benefits ul li {
+        font-size: 15px;
+    }
 }
