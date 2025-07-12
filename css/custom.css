@@ -1174,3 +1174,148 @@ p.card-para{
     border: 2px solid black;
     border-radius: 10px;
 }
+.about-section-image img{
+  height: 420px;
+}
+.about-us h1{
+  font-size: 4.3rem;
+}
+.about-us p{
+  font-size: 20px;
+}
+.about-us{
+  margin-left: 5rem;
+}
+.service-box{
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  min-height: 330px;
+  max-height: 330px;
+}
+.service-box img {
+    height: 150px;
+}
+.service-content p{
+  font-size: 15px;
+}
+.challenges h1{
+  font-size: 4.3rem;
+}
+.challenge-content ul li{
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.challenge-content ul li img{
+  margin-right: 15px;
+}
+.challenges{
+  background-color: #f6f7f6;
+}
+.solver-text h1{
+  font-size: 4.3rem;
+}
+.approach img{
+  height: 500px;
+  margin-top: 3rem;
+}
+.approach{
+  background-color: #f6f7f6;
+}
+.sample img{
+  height: 500px;
+  margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .feature-card {
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px;
+      transition: 0.3s ease-in-out;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      border: 1px solid #eee;
+      min-height: 230px;
+      max-height: 230px;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 80px;
+      border-radius: 20px;
+      margin: 0 auto 20px;
+      background: linear-gradient(to top left, #fff 40%, #ffa726 100%);
+      padding-top: 22px;
+      padding-left: 3px;
+      
+    }
+    .icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 80px;
+      border-radius: 20px;
+      margin: 0 auto 20px;
+      background: white;
+    }
+    .icon img{
+      border-radius: 20px;
+    }
+
+    .icon-box img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .feature-title {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: #444;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
