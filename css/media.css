@@ -438,6 +438,12 @@
         .contact-image img {
         height: 230px;
     }
+    .case-logo img {
+    height: 150px;
+}
+.case-content h2 {
+    font-size: 22px;
+}
   .my-5 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
