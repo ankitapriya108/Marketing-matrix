@@ -1383,3 +1383,13 @@ p.card-para{
       min-height: 200px;
     max-height: 200px;
     }
+    .case-logo img{
+      height: 300px;
+    }
+.contact-details i{
+  font-size: 25px;
+  color: #ff820b;
+}
+.contact-details{
+  margin-left: 10rem;
+}

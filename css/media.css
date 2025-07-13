@@ -18,6 +18,15 @@
     right: 60px;
     bottom: 55px;
   }
+  .contact-details {
+    margin-left: 1rem;
+}
+.address.pb-5 {
+    padding-bottom: 2rem !important;
+}
+.mobile.pb-5 {
+    padding-bottom: 2rem !important;
+}
 }
 @media (max-width: 1100px) {
   .whatsapp-logo img {
@@ -129,6 +138,14 @@
     margin-top: 2rem;
     font-size: 2.5rem;
   }
+  .contact-details h3{
+    font-size: 1.25rem;
+  }
+  .contact-details i {
+    font-size: 17px;
+}
+
+
   .case-study-container h2 {
     text-align: center;
   }
@@ -368,6 +385,15 @@
   .terms-and-conditions h3 {
     font-size: 22px;
   }
+  .contact-image{
+    text-align: center;
+  }
+  .contact-image img{
+    height: 300px;
+  }
+  .contact-details{
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 860px) {
@@ -406,6 +432,12 @@
   .list-item {
     font-size: 1rem;
   }
+      .contact-details h3 {
+        font-size: 20px !important;
+    }
+        .contact-image img {
+        height: 230px;
+    }
   .my-5 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
