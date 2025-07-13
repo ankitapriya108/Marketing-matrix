@@ -759,7 +759,7 @@
         </div>
       </section> -->
 
-      <section class="footer-section">
+        <section class="footer-section">
         <footer class="footer text-white">
           <div class="container">
             <div class="row mb-4">
@@ -916,6 +916,10 @@
         });
       });
 
+
+
+      //Text typing
+
       const phrases = [
         "Solar Leads",
         "Furniture Leads",
@@ -944,6 +948,9 @@
 
       window.addEventListener("DOMContentLoaded", typePhrase);
 
+
+      //swipper
+
       const swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -965,39 +972,45 @@
         },
       });
 
-      const sliderTrack = document.getElementById("sliderTrack");
-      const prevBtn = document.getElementById("prevBtn");
-      const nextBtn = document.getElementById("nextBtn");
 
-      let scrollAmount = 0;
 
-      function getCardWidth() {
-        const card = sliderTrack.querySelector(".blog-card");
-        return card
-          ? card.offsetWidth + parseInt(getComputedStyle(sliderTrack).gap || 0)
-          : 320;
-      }
+      // const sliderTrack = document.getElementById("sliderTrack");
+      // const prevBtn = document.getElementById("prevBtn");
+      // const nextBtn = document.getElementById("nextBtn");
 
-      function updateSlider(direction) {
-        const cardWidth = getCardWidth();
-        const maxScroll = sliderTrack.scrollWidth - sliderTrack.clientWidth;
+      // let scrollAmount = 0;
 
-        if (direction === "next") {
-          scrollAmount = Math.min(scrollAmount + cardWidth, maxScroll);
-        } else {
-          scrollAmount = Math.max(scrollAmount - cardWidth, 0);
-        }
+      // function getCardWidth() {
+      //   const card = sliderTrack.querySelector(".blog-card");
+      //   return card
+      //     ? card.offsetWidth + parseInt(getComputedStyle(sliderTrack).gap || 0)
+      //     : 320;
+      // }
 
-        sliderTrack.style.transform = `translateX(-${scrollAmount}px)`;
-      }
+      // function updateSlider(direction) {
+      //   const cardWidth = getCardWidth();
+      //   const maxScroll = sliderTrack.scrollWidth - sliderTrack.clientWidth;
 
-      prevBtn.addEventListener("click", () => updateSlider("prev"));
-      nextBtn.addEventListener("click", () => updateSlider("next"));
+      //   if (direction === "next") {
+      //     scrollAmount = Math.min(scrollAmount + cardWidth, maxScroll);
+      //   } else {
+      //     scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+      //   }
 
-      window.addEventListener("resize", () => {
-        scrollAmount = 0; // reset on resize
-        sliderTrack.style.transform = `translateX(0px)`;
-      });
+      //   sliderTrack.style.transform = `translateX(-${scrollAmount}px)`;
+      // }
+
+      // prevBtn.addEventListener("click", () => updateSlider("prev"));
+      // nextBtn.addEventListener("click", () => updateSlider("next"));
+
+      // window.addEventListener("resize", () => {
+      //   scrollAmount = 0; // reset on resize
+      //   sliderTrack.style.transform = `translateX(0px)`;
+      // });
+
+
+
+
 
       window.onload = function () {
         setTimeout(() => {
