@@ -148,7 +148,7 @@
   }
   .plan-benefits ul li {
     font-size: 14px;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -248,21 +248,21 @@
     min-height: auto;
     max-height: 100%;
   }
-  .challenge-image{
+  .challenge-image {
     text-align: center;
   }
-  .solver-image{
+  .solver-image {
     text-align: center;
   }
-      .solver-text h1 {
-        font-size: 2.5rem;
-    }
-        .feature-card {
-        min-height: auto;
-        max-height: 100%;
-        margin-top: 1.5rem;
-    }
-    
+  .solver-text h1 {
+    font-size: 2.5rem;
+  }
+  .feature-card {
+    min-height: auto;
+    max-height: 100%;
+    margin-top: 1.5rem;
+  }
+
   .challenges h1 {
     font-size: 2.5rem;
   }
@@ -370,23 +370,26 @@
   }
 }
 
-@media (max-width:860px){
+@media (max-width: 860px) {
   .plans.d-flex.justify-content-between.mt-5 {
     flex-direction: column !important;
     gap: 2rem;
-}
-    .plan-benefits ul li {
-        font-size: 20px;
-    }
-.plan1{
-  width: 100%;
-}
-.plan2{
-  width: 100%;
-}
-.plan3{
-  width: 100%;
-}
+  }
+  .plan-benefits ul li {
+    font-size: 20px;
+  }
+  .plan1 {
+    width: 100%;
+  }
+  .plan2 {
+    width: 100%;
+  }
+  .plan3 {
+    width: 100%;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -569,23 +572,40 @@
   .terms-and-conditions h3 {
     font-size: 16px;
   }
-      .sample img {
-        height: 180px;
-    }
-        .approach img {
-        height: 165px;
-    }
-        .challenges h1 {
-        font-size: 2rem;
-    }
-    .solver-text h1 {
-        font-size: 2rem;
-    } 
-        .plan-benefits ul li {
-        font-size: 15px;
-    }
-    table {
+  .sample img {
+    height: 180px;
+  }
+  .approach img {
+    height: 165px;
+  }
+  .challenges h1 {
+    font-size: 2rem;
+  }
+  .solver-text h1 {
+    font-size: 2rem;
+  }
+  .plan-benefits ul li {
+    font-size: 15px;
+  }
+  table {
     width: 100%;
-    }
+  }
+  th {
+    font-size: 15px;
+  }
+  td {
+    font-size: 15px;
+  }
+  h1{
+    font-size: 1.25rem;
+  }
+}
 
+@media (max-width:400px){
+      th {
+        font-size: 12px;
+    }
+        td {
+        font-size: 12px;
+    }
 }

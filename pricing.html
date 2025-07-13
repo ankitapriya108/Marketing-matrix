@@ -81,7 +81,7 @@
         <div class="container">
           <h1 class="fw-bold text-center orange">Available Palns</h1>
           <div class="plans d-flex justify-content-between mt-5">
-            <div class="plan1">
+            <a class="plan1 plan-box">
               <div class="plan-icon p-5 mb-4">
                 <i class="fa-solid fa-rocket"></i>
               </div>
@@ -95,9 +95,9 @@
                 </ul>
               </div>
               <h3 class="fw-bold text-center pt-4">₹15,000</h3>
-            </div>
+            </a>
 
-            <div class="plan2 active-plan">
+            <a class="plan2 plan-box active-plan">
               <div class="plan-icon p-5 mb-4">
                 <i class="fa-solid fa-arrow-up-from-ground-water"></i>
               </div>
@@ -113,9 +113,9 @@
                 </ul>
               </div>
               <h3 class="fw-bold text-center pt-4">₹25,000</h3>
-            </div>
+            </a>
 
-            <div class="plan3">
+            <a class="plan3 plan-box">
               <div class="plan-icon p-5 mb-4">
                 <i class="fa-solid fa-chart-line"></i>
               </div>
@@ -130,7 +130,7 @@
                 </ul>
               </div>
               <h3 class="fw-bold text-center pt-4">₹35,000</h3>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -561,6 +561,22 @@
         .addEventListener("click", function () {
           document.getElementById("cookie-banner").classList.add("hide");
         });
+
+
+
+  // Select all plan boxes
+  const plans = document.querySelectorAll('.plan-box');
+
+  plans.forEach(plan => {
+    plan.addEventListener('click', () => {
+      // Remove 'active-plan' class from all
+      plans.forEach(p => p.classList.remove('active-plan'));
+
+      // Add 'active-plan' to the clicked one
+      plan.classList.add('active-plan');
+    });
+  });
+
     </script>
   </body>
 </html>
