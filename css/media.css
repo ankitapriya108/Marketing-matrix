@@ -649,4 +649,7 @@
         td {
         font-size: 12px;
     }
+    .case-content h2 {
+    font-size: 22px;
+}
 }
