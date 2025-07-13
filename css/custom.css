@@ -1178,6 +1178,10 @@ p.card-para{
     background-color: #fff;
     border: 2px solid black;
     border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.result-delivered:last-child{
+  margin-bottom: 0px !important;
 }
 .about-section-image img{
   height: 420px;
@@ -1230,27 +1234,9 @@ p.card-para{
   color: black;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.blog-table{
+  width: 100%;
+}
 
   .feature-card {
       text-align: center;
@@ -1389,4 +1375,11 @@ p.card-para{
     th {
       font-weight: bold;
       font-size: 20px;
+    }
+    .terms-and-conditions ul{
+      padding-left: 20px !important;
+    }
+    .blog-section .card-body{
+      min-height: 200px;
+    max-height: 200px;
     }
