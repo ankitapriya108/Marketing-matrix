@@ -157,7 +157,10 @@
   .contact-details i {
     font-size: 17px;
 }
-
+.contact-btn {
+    padding: 10px 12px;
+    font-size: 18px;
+}
 
   .case-study-container h2 {
     text-align: center;
@@ -413,6 +416,7 @@
   }
   .contact-details{
     margin-top: 2rem;
+            margin-bottom: 2rem;
   }
 }
 
