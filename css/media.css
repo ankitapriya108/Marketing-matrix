@@ -418,6 +418,9 @@
     margin-top: 2rem;
             margin-bottom: 2rem;
   }
+   .calendly-frame {
+    height: 350px !important;
+  }
 }
 
 @media (max-width: 860px) {
