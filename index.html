@@ -601,6 +601,100 @@
         </div>
       </section>
 
+      <section class="section-six mt-5">
+        <div class="container">
+          <h2 class="text-center mb-4">About  Our CLients</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Testimonial 1 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="avatar">
+                  <img
+                    src="./images/srk-logo.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </div>
+                <p class="quote pb-2">
+                  We’re really happy with the results from Marketing Matrix.
+                  They are true Meta Ads experts and have helped us get
+                  high-quality office furniture leads through smart lead
+                  generation campaigns. The team understands our business and
+                  always gives full support. Thanks to them, we’re now reaching
+                  the right clients and growing faster!"
+                </p>
+                <h5 class="fw-bold">Bhawana Khandelwal</h5>
+                <p class="title text-black">Owner, SRK Modular Furniture Co</p>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="avatar">
+                  <img
+                    src="./images/Solar-matrix.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </div>
+                <p class="quote pb-2">
+                  Marketing Matrix has played a key role in helping us grow.
+                  Their expertise in Meta Ads and lead generation has brought us
+                  genuine and high-quality solar leads. The team is
+                  professional, responsive, and understands how to target the
+                  right audience. We’ve seen great results in a short time.
+                  Highly recommended!"
+                </p>
+                <h5 class="fw-bold">Kishor Chandra</h5>
+                <p class="title text-black">Owner, Solar Matrix</p>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="swiper-slide testimonial-card">
+                <div class="avatar">
+                  <img
+                    src="./images/devhorizon.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </div>
+                <p class="quote pb-2">
+                  Marketing Matrix has done a great job with our Facebook Ads
+                  lead generation. The leads we’re getting now are much more
+                  targeted and relevant. Their team really understands the real
+                  estate market and knows how to run effective campaigns. We’ve
+                  seen a solid boost in inquiries and quality prospects. Highly
+                  appreciate their support!"
+                </p>
+                <h5 class="fw-bold">Rakesh Yadav</h5>
+                <p class="title text-black">Owner, Dev Horizon Real Estate</p>
+              </div>
+
+              <!-- Testimonial 4 -->
+
+              <div class="swiper-slide testimonial-card">
+                <div class="avatar">
+                  <img
+                    src="./images/sedna logo.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </div>
+                <p class="quote pb-2">
+                  Working with Marketing Matrix has been a great experience.
+                  Their team understands how to run Facebook Ads for lead
+                  generation in the solar industry. We’ve received quality leads
+                  from targeted campaigns, and it has helped us grow our reach
+                  and connect with genuine customers. Their support and
+                  expertise truly make a difference."
+                </p>
+                <h5 class="fw-bold">Team Sedna Energy</h5>
+                <p class="title text-black">Solar EPC Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="footer-section">
         <footer class="footer text-white">
           <div class="container">
@@ -638,8 +732,14 @@
               <div class="col-md-4">
                 <h6>Help</h6>
                 <ul class="footer-points">
-                  <li><a href="./get-started.html" target="_blank">Contact Us</a></li>
-                  <li><a href="tel:+91-8952949752" target="_blank">+91 89529-49752</a></li>
+                  <li>
+                    <a href="./get-started.html" target="_blank">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="tel:+91-8952949752" target="_blank"
+                      >+91 89529-49752</a
+                    >
+                  </li>
                   <li>
                     <a href="mailto:connect@marketingmatrix.in" target="_blank"
                       >connect@marketingmatrix.in</a
@@ -666,17 +766,21 @@
                 <a class="text-white" href="./privacy-policy.html"
                   >Privacy Policy</a
                 >
-                
               </div>
               <div class="social-icons">
-                <a href="https://www.facebook.com/marketingmatrixjaipur" target="_blank"
+                <a
+                  href="https://www.facebook.com/marketingmatrixjaipur"
+                  target="_blank"
                   ><i class="ri-facebook-box-fill text-white"></i
                 ></a>
                 <a
-                  href="https://www.linkedin.com/company/marketing-matrix-jaipur/" target="_blank"
+                  href="https://www.linkedin.com/company/marketing-matrix-jaipur/"
+                  target="_blank"
                   ><i class="ri-linkedin-box-fill text-white"></i
                 ></a>
-                <a href="https://www.instagram.com/marketing__matrix" target="_blank"
+                <a
+                  href="https://www.instagram.com/marketing__matrix"
+                  target="_blank"
                   ><i class="ri-instagram-line text-white"></i
                 ></a>
               </div>
@@ -787,17 +891,26 @@
 
       //swipper
 
-      window.onload = function () {
-        setTimeout(() => {
-          const banner = document.getElementById("cookie-banner");
-          banner.classList.remove("d-none");
-        }, 3000); // 3000ms = 3 seconds
-      };
-      document
-        .getElementById("accept-btn")
-        .addEventListener("click", function () {
-          document.getElementById("cookie-banner").classList.add("hide");
-        });
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
     </script>
   </body>
 </html>
